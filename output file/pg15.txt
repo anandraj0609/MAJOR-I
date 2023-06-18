@@ -1,23 +1,22 @@
-Chapter 1 - A Tutorial Introduction
-programs do reasonable things with boundary conditions. 
+ Chapter 1 - A Tutorial Introduction
+programs boundary conditions with reasonable things do .
 1.5.3 Line Counting
-The next program counts input lines. As we mentioned above, the standard library ensures that an input text stream 
-appears as a sequence of lines, each terminated by a newline. Hence, counting lines is just counting newlines: 
-  
-The body of the while now consists of an if, which in turn controls the increment ++nl. The if statement tests 
-the parenthesized condition, and if the condition is true, executes the statement (or group of statements in braces) that follows. We have again indented to show what is controlled by what. 
-The double equals sign == is the C notation for ``is equal to'' (like Pascal's single = or Fortran's .EQ.). This 
-symbol is used to distinguish the equality test from the single = that C uses for assignment. A word of caution: newcomers to C occasionally write = when they mean ==. As we will see in 
-Chapter 2, the result is usually a legal 
-expression, so you will get no warning. 
-A character written between single quotes represents an integer value equal to the numerical value of the character 
-in the machine's character set. This is called a character constant, although it is just another way to write a small 
-integer. So, for example, 'A' is a character constant; in the ASCII character set its value is 65, the internal representation of the character A. Of course, 'A' is to be preferred over 65: its meaning is obvious, and it is 
-independent of a particular character set. 
-The escape sequences used in string constants are also legal in character constants, so '\n' stands for the value of 
-the newline character, which is 10 in ASCII. You should note carefully that '\n' is a single character, and in expressions is just an integer; on the other hand, '\n' is a string constant that happens to contain only one 
-character. The topic of strings versus characters is discussed further in 
-Chapter 2. 
-Exercise 1-8. Write a program to count blanks, tabs, and newlines. 
-Exercise 1-9. Write a program to copy its input to its output, replacing each string of one or more blanks by a 
-single blank. 
+The next program input lines counts . As we above mentioned , the ensures that an input text stream standard library
+lines of a sequence as appears , a newline by terminated each . Hence , counting lines just newlines counting is :
+the while of The body now an if , which turn in controls the increment + nl . The if statement tests + of consists
+the parenthesized condition , and if the condition true is , executes the statement -LRB- or braces in statements of group -RRB- that follows . We again show what by what controlled is to indented have .
+The double equals sign = = the C notation `` equal to is '' for -LRB- Pascal 's single = or Fortran 's . EQ . like -RRB- is . This
+symbol the equality test the single = that C assignment for uses . caution of A word : C to newcomers from occasionally = when they = = mean . write distinguish to As we see in will used is
+Chapter 2 , the result usually a legal is
+expression , so you no warning get will .
+written between single quotes A character an integer value the character of the numerical value to equal represents
+the machine 's character in set . This a character constant called is , although it just another way a small write to is
+integer . So , example for , ` A ' a character constant is ; the ASCII character set in its value 65 , the character A. of the internal representation course Of , ` A ' 65 over preferred be to is is : its meaning obvious is , and it is
+a particular character of independent set .
+string constants in used The escape sequences also , so ' \ n ' stands the value of for character constants in legal are
+the newline character , which ASCII . in 10 You that carefully ' \ n ' a single character is , and in expressions just an integer is ; the other hand , ' \ n on ' note should is a string constant is that only one contain to happens
+character . strings versus characters of The topic further in discussed is
+Chapter 2 .
+Exercise 1-8 . a program blanks , tabs , and newlines count to Write .
+Exercise 1-9 . a program its input its output to , a by one or more blanks of each string replacing copy to Write
+single blank .
