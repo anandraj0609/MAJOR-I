@@ -1,14 +1,14 @@
-Chapter 1 - A Tutorial Introduction
-Exercise 1-10. Write a program to copy its input to its output, replacing each tab by \t, each backspace by \b, 
-and each backslash by \\. This makes tabs and backspaces visible in an unambiguous way. 
+ Chapter 1 - A Tutorial Introduction
+Exercise 1-10 . a program its input its output to , \ t , each backspace \ by b , by each tab replacing copy to Write
+and each \ \ . by backslash This tabs and backspaces an unambiguous way in visible makes .
 1.5.4 Word Counting
-The fourth in our series of useful programs counts lines, words, and characters, with the loose definition that a 
-word is any sequence of characters that does not contain a blank, tab or newline. This is a bare-bones version of the 
-UNIX program wc. 
-   
-Every time the program encounters the first character of a word, it counts one more word. The variable state 
-records whether the program is currently in a word or not; initially it is ``not in a word'', which is assigned the 
-value OUT. We prefer the symbolic constants IN and OUT to the literal values 1 and 0 because they make the 
-program more readable. In a program as tiny as this, it makes little difference, but in larger programs, the increase in clarity is well worth the modest extra effort to write it this way from the beginning. You'll also find that it's easier to make extensive changes in programs where magic numbers appear only as symbolic constants. 
-The line 
-   nl = nw = nc = 0;
+useful programs of our series in The fourth lines , words , and characters , the loose definition with a that counts
+word characters that a blank , tab contain not does or This the of a bare-bones version is newline . of any sequence is
+UNIX program wc .
+Every time the program the first character a word of , it one more word counts . encounters The variable state
+records whether the program currently a word or not in is ; initially it `` not a word in '' , which assigned is is the
+We the symbolic constants IN prefer OUT . value and the literal values to OUT 1 and 0 because they the make
+program more readable . this as tiny as a program In , it little difference makes , but larger programs , clarity in the increase in well worth is it the beginning from this way write to the modest extra effort . You also find that it programs in extensive changes make to where magic numbers only symbolic constants as appear easier 's 'll .
+The line
+nl = = nc = 0 nw ;
+
