@@ -1,24 +1,21 @@
-Chapter 1 - A Tutorial Introduction
-       
-The quantities LOWER, UPPER and STEP are symbolic constants, not variables, so they do not appear in 
-declarations. Symbolic constant names are conventionally written in upper case so they can ber readily 
-distinguished from lower case variable names. Notice that there is no semicolon at the end of a #define line. 
+ Chapter 1 - A Tutorial Introduction
+LOWER , UPPER and STEP symbolic constants , not variables are , so they appear in not do The quantities
+declarations . conventionally upper case in written so they readily ber can are Symbolic constant names
+lower case variable names from . distinguished Notice that there a #define line of the end at no semicolon is .
 1.5 Character Input and Output
-We are going to consider a family of related programs for processing character data. You will find that many 
-programs are just expanded versions of the prototypes that we discuss here. 
-The model of input and output supported by the standard library is very simple. Text input or output, regardless of 
-where it originates or where it goes to, is dealt with as streams of characters. A text stream is a sequence of characters divided into lines; each line consists of zero or more characters followed by a newline character. It is the responsibility of the library to make each input or output stream confirm this model; the C programmer using the library need not worry about how lines are represented outside the program. 
-The standard library provides several functions for reading or writing one character at a time, of which getchar 
-and putchar are the simplest. Each time it is called, getchar reads the next input character from a text stream 
-and returns that as its value. That is, after 
-the variable c contains the next character of input. The characters normally come from the keyboard; input from 
-files is discussed in 
-
-Chapter 7. 
-The function putchar prints a character each time it is called: 
-
-prints the contents of the integer variable c as a character, usually on the screen. Calls to putchar and printf 
-may be interleaved; the output will appear in the order in which the calls are made. 
+We related programs processing character data . for You that many find will of a family consider to going are
+programs just the prototypes of versions expanded that we here discuss are .
+The model input and output of the standard library by supported very simple . Text input or output , of regardless is
+where it originates or where it goes to , characters of as streams with . dealt is A text stream lines into divided characters of a sequence is ; each line zero or a newline character by followed more characters of consists . It the library each input or output stream this model confirm make to of the responsibility is ; the library using the C programmer how lines the program outside represented are about worry not need .
+The standard library or writing one character a time at , which getchar of reading for several functions provides
+and the simplest . Each time it called is , getchar a text stream from the next input character reads are putchar
+and that its value . as That is , after returns
+the variable c contains input of the next character . normally the keyboard from come The characters ; input from
+files in discussed is
+Chapter 7 .
+The function putchar a character each time prints it called is :
+c as a character , usually the screen . on the integer variable of the contents prints putchar and printf to Calls
+interleaved be may ; the output the order in which the calls made are in appear will .
 1.5.1 File Copying
-Given getchar and putchar, you can write a surprising amount of useful code without knowing anything more about input and output. The simplest example is a program that copies its input to its output one character at a time: 
-read a character
+getchar and putchar , you Given useful code of a surprising amount anything knowing without write can input and output about more . The simplest example a program is that its output one character to a time at its input copies :
+a character read
