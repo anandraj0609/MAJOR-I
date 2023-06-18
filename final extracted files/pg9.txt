@@ -1,0 +1,20 @@
+Chapter 1 - A Tutorial Introduction
+ %d  print as decimal integer
+ %6d  print as decimal integer, at least 6 characters wide
+ %f  print as floating point
+ %6f  print as floating point, at least 6 characters wide
+ %.2f  print as floating point, 2 characters after decimal point
+ %6.2f   print as floating point, at least 6 wide and 2 after decimal point 
+Among others, printf also recognizes %o for octal, %x for hexadecimal, %c for character, %s for character 
+string and %% for itself. 
+Exercise 1-3. Modify the temperature conversion program to print a heading above the table. Exercise 1-4. Write a program to print the corresponding Celsius to Fahrenheit table. 
+1.3 The for statement
+There are plenty of different ways to write a program for a particular task. Let's try a variation on the temperature 
+converter. 
+   
+This produces the same answers, but it certainly looks different. One major change is the elimination of most of the 
+variables; only fahr remains, and we have made it an int. The lower and upper limits and the step size appear only as constants in the for statement, itself a new construction, and the expression that computes the Celsius temperature now appears as the third argument of printf instead of a separate assignment statement. 
+This last change is an instance of a general rule - in any context where it is permissible to use the value of some 
+type, you can use a more complicated expression of that type. Since the third argument of printf must be a floating-point value to match the %6.1f, any floating-point expression can occur here. 
+The for statement is a loop, a generalization of the while. If you compare it to the earlier while, its operation 
+should be clear. Within the parentheses, there are three parts, separated by semicolons. The first part, the initialization 
