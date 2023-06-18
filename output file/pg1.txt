@@ -1,14 +1,13 @@
-Chapter 1 - A Tutorial Introduction
-Let us begin with a quick introduction in C. Our aim is to show the essential elements of the language in real 
-programs, but without getting bogged down in details, rules, and exceptions. At this point, we are not trying to be complete or even precise (save that the examples are meant to be correct). We want to get you as quickly as possible to the point where you can write useful programs, and to do that we have to concentrate on the basics: variables and constants, arithmetic, control flow, functions, and the rudiments of input and output. We are intentionally leaving out of this chapter features of C that are important for writing bigger programs. These include pointers, structures, most of C's rich set of operators, several control-flow statements, and the standard library. 
-This approach and its drawbacks. Most notable is that the complete story on any particular feature is not found 
-here, and the tutorial, by being brief, may also be misleading. And because the examples do not use the full power of C, they are not as concise and elegant as they might be. We have tried to minimize these effects, but be warned. Another drawback is that later chapters will necessarily repeat some of this chapter. We hope that the repetition will help you more than it annoys. 
-In any case, experienced programmers should be able to extrapolate from the material in this chapter to their own 
-programming needs. Beginners should supplement it by writing small, similar programs of their own. Both groups can use it as a framework on which to hang the more detailed descriptions that begin in Chapter 2. 
-
+ Chapter 1 - A Tutorial Introduction
+us C. in a quick introduction Our aim real in the language of the essential elements show to is with begin Let
+programs , bogged down details , rules , and exceptions in getting . without but this point At , we complete or even precise -LRB- save that the examples correct be to meant are -RRB- be to trying not are . We you as the point where you useful programs write , and do that we the basics on concentrate to have to can : variables and constants , arithmetic , control flow , functions , and input and output of the rudiments . We intentionally C of this chapter features of leaving out are that bigger programs writing for important are . to possible These pointers , structures , operators of C 's rich set of most , several control-flow statements , and the standard library include quickly as get to want .
+This approach and its drawbacks . Most notable is that any particular feature on the complete story found not is
+here , and the tutorial , brief being by , also misleading . And because the examples C of the full power , they as concise and elegant as they be might . not are use not do We these effects minimize , but warned be . Another drawback to tried have is that later chapters necessarily this chapter of some repeat will . be may We hope that the repetition you than it annoys more help will .
+any case In , experienced programmers their own to this chapter in the material from extrapolate to able be should
+programming needs . Beginners it their own of small , similar programs writing by supplement should . Both groups it which the more detailed descriptions hang that Chapter 2 in begin to on a framework as use can .
 1.1 Getting Started
-The only way to learn a new programming language is by writing programs in it. The first program to write is the same for all languages: 
- Print the words
- hello, world 
-This is a big hurdle; to leap over it you have to be able to create the program text somewhere, compile it 
-successfully, load it, run it, and find out where your output went. With these mechanical details mastered, everything else is comparatively easy. 
+The only way learn a new programming language it in programs writing by is to . The first program write all languages for the same is to :
+the words Print
+hello , world
+This a big hurdle is ; it leap over to you the program text somewhere create , it compile to able be to have
+successfully , it load , it run , and where your output went . mastered these mechanical details With out find , everything else comparatively easy is .
