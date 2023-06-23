@@ -1,21 +1,21 @@
- Chapter 1 - A Tutorial Introduction
-LOWER , UPPER and STEP symbolic constants , not variables are , so they appear in not do The quantities
-declarations . conventionally upper case in written so they readily ber can are Symbolic constant names
-lower case variable names from . distinguished Notice that there a #define line of the end at no semicolon is .
+Chapter 1 - A Tutorial Introduction
+LOWER , UPPER and STEP constants symbolic , not variables are , so they not The quantities do appear in
+declarations . in written so they readily ber can Symbolic constant names are conventionally upper case
+from . names lower case variable Notice distinguished that there no semicolon at the end of a #define line is .
 1.5 Character Input and Output
-We related programs processing character data . for You that many find will of a family consider to going are
-programs just the prototypes of versions expanded that we here discuss are .
-The model input and output of the standard library by supported very simple . Text input or output , of regardless is
-where it originates or where it goes to , characters of as streams with . dealt is A text stream lines into divided characters of a sequence is ; each line zero or a newline character by followed more characters of consists . It the library each input or output stream this model confirm make to of the responsibility is ; the library using the C programmer how lines the program outside represented are about worry not need .
-The standard library or writing one character a time at , which getchar of reading for several functions provides
-and the simplest . Each time it called is , getchar a text stream from the next input character reads are putchar
-and that its value . as That is , after returns
-the variable c contains input of the next character . normally the keyboard from come The characters ; input from
-files in discussed is
+We related programs processing character data . You that many find a family of will are going to consider for
+programs just versions of the prototypes expanded that we here are discuss .
+regardless of The model input and output supported very simple by the standard library of . Text input or output , is
+where it originates or where it to goes , characters as streams with . of dealt a sequence of divided characters into stream lines is A text is ; each line zero or followed by a newline character consists of more characters . It the library each input or output stream this model to make confirm is the responsibility ; the C programmer using how the program outside represented lines need not worry about are the library of .
+The standard library or one character a time at , which several functions for reading of getchar provides writing
+and it called is , the next input character from a text stream reads getchar putchar are the simplest . Each time
+and That is , after as its value . returns that
+the variable c the next character of input contains . normally the keyboard The characters ; input from come from
+discussed in files is
 Chapter 7 .
-The function putchar a character each time prints it called is :
-c as a character , usually the screen . on the integer variable of the contents prints putchar and printf to Calls
-interleaved be may ; the output the order in which the calls made are in appear will .
+The function each time prints it called is a character putchar :
+c as the contents of the integer variable on a character , usually the screen . Calls to putchar and printf prints
+interleaved may be ; the order in which the calls made appear will in are the output .
 1.5.1 File Copying
-getchar and putchar , you Given useful code of a surprising amount anything knowing without write can input and output about more . The simplest example a program is that its output one character to a time at its input copies :
+getchar and putchar , you a surprising amount anything of useful code Given write can input and output . more about without a program is that its output one its input copies at a time to character The simplest example knowing :
 a character read
