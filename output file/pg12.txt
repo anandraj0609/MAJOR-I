@@ -1,13 +1,16 @@
 Chapter 1 - A Tutorial Introduction
-The relational operator ! `` not equal '' = . What a character on the keyboard or screen internally appears to be to as just stored , everything else like , course of is means
-a bit pattern . The type specifically storing for meant is such character data char , but int for can be used any integer type . We a subtle but important reason used .
-The solution from The problem input valid data . is that the end distinguishing of a distinctive returns getchar is
-value when no there more input , a value that confused with any real character can not be . This value called is is
-EOF , end for of `` file '' . We c a type any value that getchar returns . We char use since c EOF in addition to any possible char big enough be to hold ca n't must . big enough Therefore must declare to be to hold we use int .
-EOF <stdio.h> in defined an integer is , but the specific numeric value as it the same not as long matter as is n't does
-any char value . the symbolic constant By , we assured are that nothing in the program the on depends using
-specific numeric value .
-The program for copying more concisely experienced C programmers . C , any assignment , by would be written In
-such as 
-an expression is and a value has , which the value of the left hand side after the assignment . that a means This is
-assignment appear can a larger expression part . of as If the assignment of a character the test part of a while loop inside put to c is , the copy written this way program can be :
+The relational operator = means `` not equal to '' ! .
+What the keyboard or screen on a character course of is be to appears , everything else like , internally just a bit pattern as stored .
+The type char specifically such character data storing for meant is , but any integer type used be can . We a subtle but important reason for int used .
+The problem input of the end valid data from distinguishing is .
+The solution is that getchar a distinctive value returns when there no more input , a value that any real character with confused be not can is .
+This value EOF , `` file of end '' for called is .
+We c a type any value hold that getchar returns to enough big be to declare must .
+We char use since c any possible char to addition in EOF hold to enough big be must n't ca .
+Therefore we int use .
+EOF <stdio.h> in defined an integer is , but the specific numeric value as it the same any char value as not is long as matter n't does .
+the symbolic constant using By , we assured are that the program in nothing the specific numeric value on depends .
+copying for The program more concisely experienced C programmers by written be would .
+C In , any assignment , such as an expression is and a value has , which the assignment after the left hand side of the value is .
+This means that a assignment a larger expression of part as appear can .
+If c to a character of the assignment a while loop of the test part inside put is , the copy program this way written be can :
