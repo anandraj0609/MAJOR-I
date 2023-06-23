@@ -1,13 +1,22 @@
  Chapter 1 - A Tutorial Introduction
-us C. in a quick introduction Our aim real in the language of the essential elements show to is with begin Let
-programs , bogged down details , rules , and exceptions in getting . without but this point At , we complete or even precise -LRB- save that the examples correct be to meant are -RRB- be to trying not are . We you as the point where you useful programs write , and do that we the basics on concentrate to have to can : variables and constants , arithmetic , control flow , functions , and input and output of the rudiments . We intentionally C of this chapter features of leaving out are that bigger programs writing for important are . to possible These pointers , structures , operators of C 's rich set of most , several control-flow statements , and the standard library include quickly as get to want .
-This approach and its drawbacks . Most notable is that any particular feature on the complete story found not is
-here , and the tutorial , brief being by , also misleading . And because the examples C of the full power , they as concise and elegant as they be might . not are use not do We these effects minimize , but warned be . Another drawback to tried have is that later chapters necessarily this chapter of some repeat will . be may We hope that the repetition you than it annoys more help will .
-any case In , experienced programmers their own to this chapter in the material from extrapolate to able be should
-programming needs . Beginners it their own of small , similar programs writing by supplement should . Both groups it which the more detailed descriptions hang that Chapter 2 in begin to on a framework as use can .
+us C. in a quick introduction with begin Let
+Our aim real programs in , but bogged down details , rules , and exceptions in getting without the language of the essential elements show to is .
+this point At , we complete or even precise -LRB- save that the examples correct be to meant are -RRB- be to trying not are .
+We you the point to as as quickly possible where you useful programs write can get to , and do that we the basics : variables and constants , arithmetic , control flow , functions , and input and output of the rudiments on concentrate to have to want .
+We intentionally this chapter of features C of that bigger programs writing for important are leaving out are .
+These pointers , structures , operators of C 's rich set of most , several control-flow statements , and the standard library include .
+This approach and its drawbacks . Most notable is that any particular feature on the complete story here found not is , and the tutorial , brief being by , also misleading be may .
+And because the examples C of the full power use not do , they as concise and elegant as they be might not are .
+We these effects minimize , but warned be to tried have .
+Another drawback is that later chapters necessarily this chapter of some repeat will .
+We hope that the repetition you than it annoys more help will .
+any case In , experienced programmers their own programming needs to this chapter in the material from extrapolate to able be should .
+Beginners it their own of small , similar programs writing by supplement should . Both groups it which the more detailed descriptions hang that Chapter 2 in begin to on a framework as use can .
 1.1 Getting Started
-The only way learn a new programming language it in programs writing by is to . The first program write all languages for the same is to :
+The only way a new programming language learn to it in programs writing by is .
+The first program write to all languages for the same is :
 the words Print
 hello , world
 This a big hurdle is ; it leap over to you the program text somewhere create , it compile to able be to have
-successfully , it load , it run , and where your output went . mastered these mechanical details With out find , everything else comparatively easy is .
+successfully , it load , it run , and where your output went find out .
+mastered these mechanical details With , everything else comparatively easy is .
