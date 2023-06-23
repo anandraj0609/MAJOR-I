@@ -1,22 +1,20 @@
 Chapter 1 - A Tutorial Introduction
 other, it may return a value to its caller, which is in effect the environment in which the program was executed. 
-Typically, a return value of zero implies normal termination; non-zero values signal unusual or erroneous 
-termination conditions. In the interests of simplicity, we have omitted return statements from our main 
-functions up to this point, but we will include them hereafter, as a reminder that programs should return status to their environment. 
+Typically, a return value of zero implies normal termination; non-zero values signal unusual or erroneous termination conditions. In the interests of simplicity, we have omitted return statements from our main functions up to this point, but we will include them hereafter, as a reminder that programs should return status totheir environment. 
 The declaration 
     int power(int base, int n);
-just before main says that power is a function that expects two int arguments and returns an int. This 
-declaration, which is called a function prototype, has to agree with the definition and uses of power. It is an error 
-if the definition of a function or any uses of it do not agree with its prototype. 
-parameter names need not agree. Indeed, parameter names are optional in a function prototype, so for the prototype 
-we could have written 
+just before main says that power is a function that expects two int arguments and returns an int. 
+This declaration, which is called a function prototype, has to agree with the definition and uses of power.
+It is an error if the definition of a function or any uses of it do not agree with its prototype. 
+parameter names need not agree. 
+Indeed, parameter names are optional in a function prototype, so for the prototype we could have written 
     int power(int, int);
 Well-chosen names are good documentation however, so we will often use them. 
-A note of history: the biggest change between ANSI C and earlier versions is how functions are declared and 
-defined. In the original definition of C, the power function would have been written like this: 
-   
+A note of history: the biggest change between ANSI C and earlier versions is how functions are declared and defined.
+In the original definition of C, the power function would have been written like this: 
 The parameters are named between the parentheses, and their types are declared before opening the left brace; 
 undeclared parameters are taken as int. (The body of the function is the same as before.) 
-The declaration of power at the beginning of the program would have looked like this:     int power();
+The declaration of power at the beginning of the program would have looked like this:     
+int power();
 No parameter list was permitted, so the compiler could not readily check that power was being called correctly. 
 Indeed, since by default power would have been assumed to return an int, the entire declaration might well have 
