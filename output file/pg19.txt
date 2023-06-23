@@ -1,28 +1,27 @@
-Chapter 1 - A Tutorial Introduction
-This works only if '0', '1', ..., '9' have consecutive increasing values. Fortunately, this is true for all 
-character sets. 
-By definition, chars are just small integers, so char variables and constants are identical to ints in arithmetic 
-expressions. This is natural and convenient; for example c-'0' is an integer expression with a value between 0 and 9 corresponding to the character '0' to '9' stored in c, and thus a valid subscript for the array ndigit. 
-The decision as to whether a character is a digit, white space, or something else is made with the sequence 
-   if (c >= '0' && c <= '9')
-       ++ndigit[c-'0'];   else if (c == ' ' || c == '\n' || c == '\t')       ++nwhite;   else       ++nother;
-The pattern 
-   if (condition
-1)
-       statement1
-   else if (condition2)
-       statement2
-       ...
-       ...   else       statement
-n
-occurs frequently in programs as a way to express a multi-way decision. The conditions are evaluated in order from the top until some condition is satisfied; at that point the corresponding statement part is executed, and the entire construction is finished. (Any statement can be several statements enclosed in braces.) If none of the 
-conditions is satisfied, the statement after the final else is executed if it is present. If the final else and 
-statement are omitted, as in the word count program, no action takes place. There can be any number of 
-else if(condition)
-  statement 
-groups between the initial if and the final else. As a matter of style, it is advisable to format this construction as we have shown; if each if were indented past the 
-previous else, a long sequence of decisions would march off the right side of the page. 
-The switch statement, to be discussed in 
-Chapter 4, provides another way to write a multi-way branch that is 
-particulary suitable when the condition is whether some integer or character expression matches one of a set of 
-constants. For contrast, we will present a switch version of this program in Section 3.4. 
+ Chapter 1 - A Tutorial Introduction
+' 0 ' , ' 1 if ' only works , This ... , ' ' consecutive increasing values . Fortunately , this all character for true is have 9 sets .
+definition By , chars just small integers are , so char variables and constants arithmetic expressions in ints to identical are .
+This natural and convenient is ; example c for - ' 0 ' an integer expression 0 and 9 between a value with the character ' 0 to ' ' 9 ' in c , stored to corresponding and thus the array ndigit for a valid subscript is .
+whether a character a digit , white space , or something else is to as The decision the sequence with made is
+if -LRB- c -RRB- ' 0 ' & & c -LRB- ' 9 ' = -RRB- =
++ ndigit -LRB- - ' 0 ' c -RRB- ; else if -LRB- c c = = ' \ n ' | | c | = = ' ' | = ' \ t ' = -RRB- + + ; else + + nother nwhite + ;
+The pattern
+if -LRB- condition1 -RRB-
+statement1
+else if -LRB- condition2 -RRB-
+statement2
+...
+...
+else
+statement n
+frequently a way a multi-way decision express to as programs in occurs .
+The conditions the top from order in until some condition satisfied is ; at that point the corresponding statement part executed is , and the entire construction finished is . evaluated -LRB- Any statement braces in enclosed several statements be can . -RRB- are
+If the conditions of none satisfied is , the final else after the statement executed is if it present is .
+If the final else and statement , the word count program in as omitted are , no action place takes .
+There any number of be can
+else if -LRB- condition -RRB-
+statement
+groups the initial if and the final else between .
+style of a matter As , it this construction format as we shown have ; if each if the previous else , decisions of a long sequence past indented were the page of the right side march off would to advisable is .
+The switch statement , Chapter 4 in discussed be to , another way a multi-way branch write that particulary when the condition is whether some integer or character expression constants of a set of one matches suitable is to provides .
+contrast For , we Section 3.4 in this program of a switch version present will .
