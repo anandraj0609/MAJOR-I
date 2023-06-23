@@ -1,15 +1,16 @@
- Chapter 1 - A Tutorial Introduction
-a character gets The while , it c , and then tests whether the character the end-of-file signal was . If it to assigns
-not was , the while of the body , the character . The while then repeats . When the input of the end finally reached is printing executed is , the while terminates and so main does .
-This version the input - there now getchar to only one reference is - and the program shrinks . centralizes The
-resulting program more compact is , and , once the idiom , read to easier mastered is . You this style often see 'll . -LRB- It , however carried away get and impenetrable code create to possible 's , a tendency that we curb to try will . -RRB-
-The parentheses around the assignment , the condition within necessary are . ! = of The precedence higher than is
-that = , which means that parentheses the relational test of the absence ! in = the assignment = before done be would . the statement So of
-equivalent to is
-This 0 or 1 to c setting , whether or not getchar of the call end returned depending on of the undesired effect has
-file . -LRB- this on More in of
-Chapter 2 . -RRB-
+Chapter 1 - A Tutorial Introduction
+The while a character gets , c to it assigns , and then tests whether the character the end-of-file signal was .
+If it not was , the while of the body , the character printing executed is .
+The while then repeats .
+When the input of the end finally reached is , the while terminates and so main does .
+This version the input centralizes - there now getchar to only one reference is - and the program shrinks .
+The resulting program more compact , and , once the idiom mastered is , easier read to is .
+You this style often . see 'll -LRB- It carried away get and impenetrable code , however , a tendency that we curb to try will create to possible 's . -RRB-
+the assignment , the condition within around The parentheses necessary are .
+! = of The precedence that = of , which means that parentheses the relational test of the absence ! in = the assignment = before done be would than higher is .
+So the statement 0 or 1 to c setting of the undesired effect , on depending has This to equivalent is whether or not getchar of the call Chapter 2 in file . -LRB- this on More of end returned . -RRB-
 Exercsise 1-6 . Verify that the expression -LRB- -RRB- ! = EOF getchar 0 or 1 is .
 Exercise 1-7 . a program EOF of the value print to Write .
 1.5.2 Character Counting
 The next program characters counts ; it the copy program to similar is .
+#include <stdio.h>
