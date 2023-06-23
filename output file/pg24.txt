@@ -1,14 +1,20 @@
 Chapter 1 - A Tutorial Introduction
 1.9 Character Arrays
-The most common type of array in C is the array of characters. To illustrate the use of character arrays and 
-functions to manipulate them, let's write a program that reads a set of text lines and prints the longest. The outline is simple enough: 
-   while (there's another line)
-       if (it's longer than the previous longest)           (save it)           (save its length)   print longest line
-This outline makes it clear that the program divides naturally into pieces. One piece gets a new line, another saves 
-it, and the rest controls the process. 
-Since things divide so nicely, it would be well to write them that way too. Accordingly, let us first write a separate 
-function getline to fetch the next line of input. We will try to make the function useful in other contexts. At the minimum, getline has to return a signal about possible end of file; a more useful design would be to return the 
-length of the line, or zero if end of file is encountered. Zero is an acceptable end-of-file return because it is never a valid line length. Every text line has at least one character; even a line containing only a newline has length 1. 
-When we find a line that is longer than the previous longest line, it must be saved somewhere. This suggests a 
-second function, copy, to copy the new line to a safe place. 
-Finally, we need a main program to control getline and copy. Here is the result.    
+C in array of The most common type characters of the array is .
+character arrays and functions of the use them manipulate to , let illustrate To a program write that text lines of a set reads and the longest prints 's .
+The outline simple enough is :
+while -LRB- there 's another line -RRB-
+if -LRB- it longer 's than the previous longest -RRB- -LRB- it save -RRB- -LRB- its length save -RRB- longest line print
+This outline it clear that the program naturally pieces into divides makes .
+One piece a new line gets , another it saves , and the rest the process controls .
+Since things nicely so divide , it well them that way too write to be would .
+Accordingly , us first a separate function getline input of the next line fetch to write let .
+We the function other contexts in useful make to try will .
+the minimum At , getline file of possible end about a signal return to has ; a more useful design the return to be would
+the line of length , or zero if end file of encountered is .
+Zero an acceptable end-of-file return is because it never a valid line length is .
+Every text line at least one character has ; only a newline containing even a line length 1 has .
+When we a line find that than longer the previous longest line is , it somewhere saved be must .
+This a second function , copy , a safe place to the new line copy to suggests .
+Finally , we need control getline and copy . to a main program Here the result is .
+
