@@ -3,7 +3,8 @@ which set the variables to their initial values. Individual statements are termi
 Each line of the table is computed the same way, so we use a loop that repeats once per output line; this is the purpose of the while loop 
     while (fahr <= upper) {
        ...    }
-The while loop operates as follows: The condition in parentheses is tested. If it is true (fahr is less than or equal to upper), the body of the loop (the three statements enclosed in braces) is executed. 
+The while loop operates as follows: The condition in parentheses is tested. 
+If it is true (fahr is less than or equal to upper), the body of the loop (the three statements enclosed in braces) is executed. 
 Then the condition is re-tested, and if true, the body is executed again. When the test becomes false (fahr exceeds upper) the loop ends, and execution continues at the statement that follows the loop. 
 There are no further statements in this program, so it terminates. 
 The body of a while can be one or more statements enclosed in braces, as in the temperature converter, or a single statement without braces, as in 
