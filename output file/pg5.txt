@@ -2,24 +2,23 @@
 The two lines
 \/ \* Fahrenheit-Celsius table print
 fahr = 0 , 20 for , ... , 300 \* \/
-are a comment , which this case in explains briefly what the program does . \/ \* between Any characters and are \* \/
-the compiler by ignored ; they freely a program easier understand to . Comments anywhere appear may where a blank , tab or newline can make to used be may .
-C In , all variables declared be must before they , usually the function any before of the beginning at used are
-executable statements . A declaration variables of the properties announces ; it such as , a name and variables of a list of consists
+a comment are , which this case in explains briefly what the program does .
+Any characters \/ between \* and \* \/ the compiler by ignored are ; they freely a program easier understand to make to used be may .
+Comments anywhere appear may where a blank , tab or newline can .
+C In , all variables declared be must before they , usually any executable statements before the function of the beginning at used are .
+A declaration variables of the properties announces ; it such as , a name and variables of a list of consists
 int fahr , celsius ;
 int lower , upper , step ;
-The type int means that listed the variables ; float , which floating point means , with contrast by integers are
-i.e. , numbers that a fractional part have may . both int and float of The range you using are the machine on depends ; 16-bits ints , which -32768 and +32767 between lie , common are , as A float number is 32-bit ints . are
-about 10 between typically a 32-bit quantity , at least six significant digits and magnitude generally with
--38 and
-1038 .
+The type int means that listed the variables integers ; float , which floating point means with contrast by , i.e. , numbers that a fractional part have may are .
+both int and float of The range you using are the machine on depends ; 16-bits ints , which -32768 and +32767 between lie , common are , as 32-bit ints are .
+A float number typically a 32-bit quantity , at least six significant digits and about 10-38 and 1038 between generally magnitude with is .
 C int and float besides several other data types , including provides :
 char character - a single byte
 short short integer
 long long integer
 double-precision floating point double
-these objects of The size also There also these basic of arrays , structures and unions are machine-dependent . is
-types , them to pointers , and functions that them return , all of which we due course in meet will .
+these objects of The size also machine-dependent is .
+There also these basic types , them to pointers , and functions that them return , all of which we due course in meet will of arrays , structures and unions are .
 the temperature conversion program in Computation the assignment statements with begins
 = 0 lower ;
 upper = 300 ; = 20 step ;
