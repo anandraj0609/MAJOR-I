@@ -1,23 +1,22 @@
-Chapter 1 - A Tutorial Introduction
-causes the values of the two integers fahr and celsius to be printed, with a tab (\t) between them. 
-Each % construction in the first argument of printf is paired with the corresponding second argument, third 
-argument, etc.; they must match up properly by number and type, or you will get wrong answers. 
-By the way, printf is not part of the C language; there is no input or output defined in C itself. printf is just a 
-useful function from the standard library of functions that are normally accessible to C programs. The behaviour of 
-printf is defined in the ANSI standard, however, so its properties should be the same with any compiler and 
-library that conforms to the standard. 
-In order to concentrate on C itself, we don't talk much about input and output until chapter 7. In particular, we will 
-defer formatted input until then. If you have to input numbers, read the discussion of the function scanf in 
-Section 7.4. scanf is like printf, except that it reads input instead of writing output. 
-There are a couple of problems with the temperature conversion program. The simpler one is that the output isn't 
-very pretty because the numbers are not right-justified. That's easy to fix; if we augment each %d in the printf 
-statement with a width, the numbers printed will be right-justified in their fields. For instance, we might say 
-   printf("%3d %6d\n", fahr, celsius);
-to print the first number of each line in a field three digits wide, and the second in a field six digits wide, like this: 
-     0     -17
-    20      -6    40       4    60      15    80      26   100      37   ...
-The more serious problem is that because we have used integer arithmetic, the Celsius temperatures are not very 
-accurate; for instance, 0
-oF is actually about -17.8oC, not -17. To get more accurate answers, we should use floating-
-point arithmetic instead of integer. This requires some changes in the program. Here is the second version: 
- 
+ Chapter 1 - A Tutorial Introduction
+the two integers fahr of the values causes and , them between a tab -LRB- \ t -RRB- with printed be to celsius .
+printf of the first argument in Each % construction the corresponding second argument , third with paired is
+argument , etc. ; they properly number and type by match up must , or you wrong answers get will .
+the way By , printf the C language of part not is ; there no input or output C itself in . defined printf just a is is
+useful functions that normally C programs to accessible are . of the standard library from function The behavior of
+printf the ANSI standard in , however , so its properties the same any compiler with and be should defined is
+library that the standard to conforms .
+order C itself , we input and output about much chapter 7 until talk n't do . on concentrate to In particular In , we will
+formatted input defer until . then If you input numbers to have , the function scanf of the discussion in read
+Section 7.4 . scanf that it output writing instead of input reads except , printf like is .
+There a couple the temperature conversion program with problems . of The simpler one is that the output n't is are
+very pretty because the numbers right-justified . not the printf in That 's easy fix ; if we augment each to % d are
+statement a width , their fields in . right-justified be will instance For , we say might printed the numbers with
+printf -LRB- '' % 3d % 6d \ n '' , fahr , celsius -RRB- ;
+a field three digits wide in each line , and the second a field in six digits wide , this like : of the first number print to
+0 -17
+20 -6 40 4 60 15 80 26 100 37 ...
+The more serious problem is that because we integer arithmetic used have , the Celsius temperatures very not are
+accurate ; instance , 0 for
+oF actually -17.8 oC about is , not -17 . more accurate get To answers , we floating use should -
+integer . This instead of point arithmetic the program in some changes requires . Here the second version is :
