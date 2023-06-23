@@ -1,24 +1,22 @@
 Chapter 1 - A Tutorial Introduction
-This the same much before as , except that fahr and celsius float and the formula for be to declared are is
-conversion a more natural way . in written is We the previous version in integer because 5\/9 use to unable were
-division it zero to truncate would . A decimal point in a constant indicates that it point , however , so floating is
-5.0 \/ 9.0 because it two floating-point values of the ratio is truncated not is .
-If an arithmetic operator integer operands has , an integer operation performed . If an arithmetic operator one has is
-floating-point operand and one integer operand , however , the integer floating point the before to converted be will
-operation is . done If we -LRB- fahr-32 -RRB- written had , the 32 automatically floating point to converted be would .
+This the same much before as , except that fahr and celsius float be to declared are and conversion for the formula a more natural way in written is is .
+We 5\/9 the previous version in use because integer division it zero to truncate would to unable were .
+a constant in A decimal point indicates that it point , however , so 5.0 \/ 9.0 because it two floating-point values of the ratio is truncated not is floating is .
+If an arithmetic operator integer operands has , an integer operation performed is .
+If an arithmetic operator one floating-point operand and one integer operand has , however , the integer floating point to converted be will before the operation done is .
+If we -LRB- fahr-32 -RRB- written had , the 32 automatically floating point to converted be would .
 Nevertheless , floating-point constants explicit decimal points with writing even when they integral values have human readers for their floating-point nature emphasizes .
-when integers floating point to converted are for The detailed rules in are
-Chapter 2 . that the notice , now For
+when integers floating point to converted are for The detailed rules Chapter 2 in are .
+now For , the that notice
 assignment
 = lower fahr ;
 and the test
 while -LRB- fahr -LRB- = upper -RRB-
 also the natural way in work - the int float before the operation done is to converted is .
-The printf conversion specification % 3.0 f says that a floating-point number -LRB- here fahr -RRB- at printed be to is
-least three characters wide , no decimal point and no fraction digits . % 6.1 f another number -LRB- celsius -RRB- that at least six characters wide , the decimal point after 1 digit with printed be to is describes . with The output looks
+The printf conversion specification % 3.0 f says that a floating-point number -LRB- here fahr -RRB- at least three characters wide , no decimal point and no fraction digits with printed be to is .
+% 6.1 f another number -LRB- celsius -RRB- that at least six characters wide , the decimal point after 1 digit with printed be to is describes .
+The output looks
 this : like
 0 -17.8
 20 -6.7 40 4.4 ...
-Width and precision a specification from omitted be may : % 6f says that the number at least six characters be to is
-wide ; % f the decimal point after two characters specifies , but the width constrained not is ; and % f merely says .2
-floating point as the number print to .
+Width and precision a specification from omitted be may : % 6f says that the number at least six characters wide be to is ; .2 f % the decimal point after two characters specifies , but the width constrained not is ; and % f merely floating point as the number print to says 
