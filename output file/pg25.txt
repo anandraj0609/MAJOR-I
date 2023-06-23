@@ -1,11 +1,12 @@
-Chapter 1
-The functions getline and copy are declared at the beginning of the program, which we assume is contained in 
-one file. 
-main and getline communicate through a pair of arguments and a returned value. In getline, the arguments 
-are declared by the line 
-   int getline(char s[], int lim);
-which specifies that the first argument, s, is an array, and the second, lim, is an integer. The purpose of supplying 
-the size of an array in a declaration is to set aside storage. The length of an array s is not necessary in getline since its size is set in main. getline uses return to send a value back to the caller, just as the function power did. This line also declares that getline returns an int; since int is the default return type, it could be omitted. 
-Some functions return a useful value; others, like copy, are used only for their effect and return no value. The 
-return type of copy is void, which states explicitly that no value is returned. 
-getline puts the character '\0' (the null character, whose value is zero) at the end of the array it is creating, to 
+ Chapter 1
+The functions getline and copy the program , which we assume one file in contained is of the beginning at declared are .
+main and getline communicate arguments and a returned value of a pair . through getline In , the arguments the line by declared are
+int getline -LRB- char s -LRB- -RRB- , int lim -RRB- ;
+which specifies that the first argument , s , an array is , and the second , lim , an integer is .
+a declaration in an array of the size supplying of The purpose storage set aside to is .
+an array s of The length since its size main in set is getline in necessary not is .
+getline uses a value the caller to back , just as the function power did send to return .
+This line also declares that getline an int returns ; since int the default return type is , it omitted be could .
+Some functions a useful value return ; others , copy like , only their effect for used and return no value are .
+copy of The return type void is , which explicitly states that no value returned is .
+getline the array of the end it , to creating is at the character ' \ 0 ' -LRB- the null character , whose value zero is -RRB- puts
