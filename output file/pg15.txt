@@ -1,22 +1,22 @@
- Chapter 1 - A Tutorial Introduction
+Chapter 1 - A Tutorial Introduction
 programs boundary conditions with reasonable things do .
 1.5.3 Line Counting
-The next program input lines counts . As we above mentioned , the ensures that an input text stream standard library
-lines of a sequence as appears , a newline by terminated each . Hence , counting lines just newlines counting is :
-the while of The body now an if , which turn in controls the increment + nl . The if statement tests + of consists
-the parenthesized condition , and if the condition true is , executes the statement -LRB- or braces in statements of group -RRB- that follows . We again show what by what controlled is to indented have .
-The double equals sign = = the C notation `` equal to is '' for -LRB- Pascal 's single = or Fortran 's . EQ . like -RRB- is . This
-symbol the equality test the single = that C assignment for uses . caution of A word : C to newcomers from occasionally = when they = = mean . write distinguish to As we see in will used is
-Chapter 2 , the result usually a legal is
-expression , so you no warning get will .
-written between single quotes A character an integer value the character of the numerical value to equal represents
-the machine 's character in set . This a character constant called is , although it just another way a small write to is
-integer . So , example for , ` A ' a character constant is ; the ASCII character set in its value 65 , the character A. of the internal representation course Of , ` A ' 65 over preferred be to is is : its meaning obvious is , and it is
-a particular character of independent set .
-string constants in used The escape sequences also , so ' \ n ' stands the value of for character constants in legal are
-the newline character , which ASCII . in 10 You that carefully ' \ n ' a single character is , and in expressions just an integer is ; the other hand , ' \ n on ' note should is a string constant is that only one contain to happens
-character . strings versus characters of The topic further in discussed is
-Chapter 2 .
+The next program input lines counts .
+As we above mentioned , the standard library ensures that an input text stream lines of a sequence as appears , each a newline by terminated .
+Hence , counting lines just newlines counting is :
+the while of The body now an if of consists , which turn in the increment + + nl controls .
+The if statement the parenthesized condition tests , and if the condition true is , the statement -LRB- or braces in statements of group -RRB- that follows executes .
+We again show what by what controlled is to indented have .
+The double equals sign = = the C notation `` equal to is '' for -LRB- Pascal 's single = or Fortran 's . EQ . like -RRB- is .
+This symbol the equality test the single = from distinguish that C assignment for uses to used is .
+caution : C to newcomers of A word occasionally = write when they = = mean .
+As we Chapter 2 in see will , the result usually a legal expression is , so you no warning get will .
+written between single quotes A character an integer value the machine 's character set in the character of the numerical value to equal represents .
+This a character constant called is , although it just another way a small integer write to is .
+So , example for , ` A ' a character constant is ; the ASCII character in set its value 65 , the character A. of the internal representation is
+course Of , ` A ' 65 over preferred be to is : its meaning obvious is , and it set a particular character of independent is .
+string constants in used The escape sequences also character constants in legal are , so ' the newline character , which ASCII in 10 is of the value for n ' stands \ .
+You that carefully ' \ n ' a single character is , and in expressions just an integer is ; the other hand on note should , ' \ n ' a string constant is that only one character contain to happens .
+strings versus characters of The topic further Chapter 2 in discussed is .
 Exercise 1-8 . a program blanks , tabs , and newlines count to Write .
-Exercise 1-9 . a program its input its output to , a by one or more blanks of each string replacing copy to Write
-single blank .
+Exercise 1-9 . a program its input its output to , a single blank by one or more blanks of each string replacing copy to Write .
