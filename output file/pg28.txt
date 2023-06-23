@@ -1,12 +1,13 @@
 Chapter 1 - A Tutorial Introduction
-  
-The external variables in main, getline and copy are defined by the first lines of the example above, which 
-state their type and cause storage to be allocated for them. Syntactically, external definitions are just like definitions of local variables, but since they occur outside of functions, the variables are external. Before a function can use an external variable, the name of the variable must be made known to the function; the declaration is the 
-same as before except for the added keyword extern. 
-In certain circumstances, the extern declaration can be omitted. If the definition of the external variable occurs 
-in the source file before its use in a particular function, then there is no need for an extern declaration in the function. The extern declarations in main, getline and copy are thus redundant. In fact, common practice is 
-to place definitions of all external variables at the beginning of the source file, and then omit all extern declarations. 
-If the program is in several source files, and a variable is defined in file1 and used in file2 and file3, then extern 
-declarations are needed in file2 and file3 to connect the occurrences of the variable. The usual practice is to collect 
-extern declarations of variables and functions in a separate file, historically called a header, that is included by #include at the front of each source file. The suffix .h is conventional for header names. The functions of the standard library, for example, are declared in headers like <stdio.h>. This topic is discussed at length in 
-Chapter 4, and the library itself in Chapter 7 and Appendix B. 
+main , getline and copy in The external variables the example above , which their type and cause storage them for allocated be to state of the first lines by defined are .
+Syntactically , external definitions just local variables of definitions like are , but since they functions of outside occur , the variables external are .
+Before a function an external variable use can , the variable of the name the function to known made be must ; the declaration except the added keyword extern for before the same as is .
+certain circumstances In , the extern declaration omitted be can .
+If the external variable of the definition a particular function in its use before the source file in occurs , then there the function in an extern declaration for no need is .
+main , getline and copy in The extern declarations thus redundant are .
+fact In , common practice the source file of the beginning at all external variables of definitions place , and then all extern declarations omit to is .
+If the program several source files in is , and a variable file1 in defined and file2 and file3 in used is , then extern declarations file2 and file3 in the variable of the occurrences connect to needed are .
+The usual practice a separate file in variables and functions of extern declarations collect to is , historically called a header , that each source file of the front at #include by included is .
+The suffix . h header names for conventional is .
+The functions the standard library of , example for , <stdio.h> like headers in declared are .
+This topic Chapter 4 in length , and the library itself Chapter 7 and Appendix B. in at discussed is
