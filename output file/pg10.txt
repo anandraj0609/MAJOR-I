@@ -1,18 +1,18 @@
- Chapter 1 - A Tutorial Introduction
-once done is , before the loop proper entered is . The second part the test or condition is that the loop controls :
-This condition evaluated is ; if it true is , the loop -LRB- here a single ptintf -RRB- of the body executed . Then the is
+Chapter 1 - A Tutorial Introduction
+done once is is , the loop before proper entered . The second part the test or is that the loop controls condition :
+evaluated This condition is ; if it true , the body of the loop -LRB- here a single ptintf -RRB- executed is . Then the is
 increment step
-executed is , and the condition re-evaluated . The loop terminates if the condition false become has . the As with
-while , the loop of the body a single statement or braces . The in enclosed statements of a group be can
-initialization , condition and increment any expressions be can .
-while between The choice and for , which The for usually appropriate is clearer . seems on based arbitrary is
-loops in which the initialization and increment single statements are for and logically related , since it more is
-while and it than compact the loop statements together one place in control keeps .
-Exercise 1-5 . the temperature conversion program reverse order in the table print to , that is , 300 from Modify
-degrees 0 to .
+executed is , and the condition re-evaluated . The loop terminates if become the condition false has . the As with
+while , a group of enclosed statements in the body of the loop a single statement or braces . The can be
+any expressions be initialization , condition and increment can .
+The choice and for , which usually appropriate for The clearer is . between while arbitrary is based seems on
+loops in which the initialization and increment single statements for and logically related , since it more are is
+while and the loop statements one place control in together compact than it keeps .
+Exercise 1-5 . the table in reverse order , that is , Modify from 300 to print the temperature conversion program
+degrees to 0 .
 1.4 Symbolic Constants
-magic numbers with A final observation before we leave temperature conversion forever . It bad practice a program in `` magic numbers '' 300 and 20 like bury to 's ; they someone who the program later read to have might to little information convey , and they a systematic way in change to hard are . deal to One way them meaningful give to is
-names . A #define line a symbolic name or symbolic constant characters of a particular string be to defines :
+A final observation before we temperature conversion forever leave . It bad practice `` magic numbers '' in a program 's to bury like 300 and 20 ; they someone who the program later little information convey to might have to read , and hard to change in a systematic way are they . One way them meaningful to deal with magic numbers is to give
+A #define line a symbolic name or a particular string of symbolic constant characters defines to be names . :
 #define name replacement list
-Thereafter , name -LRB- quotes and another name of not part not in -RRB- of any occurrence the by replaced be will
-corresponding replacement text . The name the same form a variable name as : a sequence letters and digits of that a letter with begins . has The replacement text characters of any sequence be can ; it numbers to limited not is .
+Thereafter , any occurrence the by of name -LRB- not part not in of quotes and another name -RRB- will be replaced
+corresponding replacement text . The name the same form a variable name as : a sequence letters and digits of that a letter with begins . any sequence of text characters can be The replacement has ; it limited to numbers not is .
