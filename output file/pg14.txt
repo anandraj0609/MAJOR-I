@@ -1,20 +1,23 @@
- Chapter 1 - A Tutorial Introduction
+Chapter 1 - A Tutorial Introduction
 The statement
 + + nc ;
-presents a new operator , + + , which means one by increment . You instead nc = nc + 1 write could but + + nc is
-more concise and often more efficient . There a corresponding operator -- 1 . The operators + + and by decrement to -- either prefix operators -LRB- + + nc -RRB- or postfix operators -LRB- nc + + -RRB- be can is ; these two forms expressions in different values have , as in shown be will
-Chapter 2 , but + + nc and nc + + both increment nc . the moment For we will will
-the prefix form to stick .
-The character counting program accumulates an int . long integers instead of a long variable in its count at are
-32 least bits . Although some machines on , int and long the same size are , others on an int 16 bits , 32767 of a maximum value with , is and it relatively little input overflow an int counter to take would . The conversion specification % ld printf tells that the corresponding argument a long integer is .
-It even bigger numbers with cope to possible a double -LRB- double precision float -RRB- using . by be may We also will
-a while instead of statement for a , another way the loop write to illustrate to use .
-uses % printf f for both float and double ; % .0 f the decimal point and the of the printing suppresses
-fraction part , which zero is .
-loop for this of The body empty is , because all the work the test and increment parts . But the in done is
-C of grammatical rules require that statement for a a body . The isolated semicolon , a null statement called , have
-is there that requirement satisfy to . We it a separate line on it visible make to put .
-Before we no characters , the while or contains the input if that observe , the character counting program leave
-for test getchar to the very first call on fails , and the program zero , answer . This important is the right . while about the nice things of One produces and for is that they proceeding before , the loop of the top at test
-the body . with If there nothing do to is , nothing done is , even if that never the loop body through going means .
-Programs intelligently when zero-length input given . The while act and statements help for ensure that should
+a new operator , + + , which one by increment means presents .
+You instead nc = nc + 1 write could but + + nc more concise and often more efficient is .
+There a corresponding operator -- 1 . The operators + + and -- either prefix operators -LRB- + + nc -RRB- or postfix operators -LRB- nc + + -RRB- be can ; these two forms expressions in different values have , as Chapter 2 in shown be will , but + + nc and nc + + both increment nc by decrement to is .
+the moment For we the prefix form to stick will will .
+The character counting program accumulates an int . long integers instead of a long variable in its count at least 32 bits are .
+Although some machines on , int and long the same size are , others on an int 16 bits , 32767 of a maximum value with is , and it relatively little input overflow an int counter to take would .
+The conversion specification % ld printf tells that the corresponding argument a long integer is .
+It a double -LRB- double precision float -RRB- using by even bigger numbers with cope to possible be may .
+We also a while instead of statement for a , another way the loop write to illustrate to use will .
+f for both float and double ; % .0 f uses % printf suppresses the printing the decimal point and the fraction part of , which zero is .
+loop for this of The body empty is , because all the work the test and increment parts in done is .
+But C of the grammatical rules require that statement for a a body have .
+The isolated semicolon , a null statement called , there that requirement satisfy to is .
+We it a separate line on it visible make to put .
+Before we the character counting program leave , observe that if the input no characters , the while contains or for test getchar to the very first call on fails , and the program zero produces , the right answer .
+This important is .
+while about and for the nice things of One is that they the body with proceeding before , the loop of the top at test .
+If there nothing do to is , nothing done is , even if that never the loop body through going means .
+Programs intelligently act should when zero-length input given .
+The while and for statements that ensure help
