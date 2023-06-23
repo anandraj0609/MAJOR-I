@@ -1,22 +1,23 @@
 Chapter 1 - A Tutorial Introduction
-been omitted. 
-The new syntax of function prototypes makes it much easier for a compiler to detect errors in the number of 
-arguments or their types. The old style of declaration and definition still works in ANSI C, at least for a transition period, but we strongly recommend that you use the new form when you have a compiler that supports it. 
-Exercise 1.15. Rewrite the temperature conversion program of 
-Section 1.2 to use a function for conversion. 
-1.8 Arguments - Call by Value
-One aspect of C functions may be unfamiliar to programmers who are used to some other languages, particulary 
-Fortran. In C, all function arguments are passed ``by value.'' This means that the called function is given the values of its arguments in temporary variables rather than the originals. This leads to some different properties than are 
-seen with ``call by reference'' languages like Fortran or with var parameters in Pascal, in which the called routine 
-has access to the original argument, not a local copy. 
-Call by value is an asset, however, not a liability. It usually leads to more compact programs with fewer extraneous 
-variables, because parameters can be treated as conveniently initialized local variables in the called routine. For 
-example, here is a version of power that makes use of this property. 
-  
-The parameter n is used as a temporary variable, and is counted down (a for loop that runs backwards) until it 
-becomes zero; there is no longer a need for the variable i. Whatever is done to n inside power has no effect on the argument that power was originally called with. 
-When necessary, it is possible to arrange for a function to modify a variable in a calling routine. The caller must 
-provide the address of the variable to be set (technically a pointer to the variable), and the called function must declare the parameter to be a pointer and access the variable indirectly through it. We will cover pointers in 
-Chapter 5. 
-The story is different for arrays. When the name of an array is used as an argument, the value passed to the 
-function is the location or address of the beginning of the array - there is no copying of array elements. By subscripting this value, the function can access and alter any argument of the array. This is the topic of the next section. 
+omitted been .
+function prototypes of The new syntax it a compiler for much easier arguments or their types of the number in errors detect to makes .
+declaration and definition of The old style still a transition period for least at , ANSI C in works , but we strongly recommend that you the new form use when you a compiler have that it supports .
+Exercise 1.15 . Rewrite the temperature conversion program of
+Section conversion for a function use to 1.2 .
+1.8 Arguments - Value by Call
+C functions of One aspect programmers to unfamiliar be may who some other languages , particulary Fortran to used are .
+C In , all function arguments `` value by passed are . ''
+This means that the called function its arguments of the values temporary variables rather than the originals in given is .
+This some different properties to leads than var parameters Pascal in , in which the called routine the original argument , not a local copy to access has with or Fortran like `` reference by call '' languages with seen are .
+value by Call an asset is , however , not a liability .
+It usually fewer extraneous variables with more compact programs to leads , because parameters the called routine in conveniently initialized local variables as treated be can .
+example For , here power of a version is that this property of use makes .
+The parameter n a temporary variable as used is , and -LRB- loop for a that backwards runs -RRB- until it zero becomes counted down is ; there longer no the variable i. for a need is
+Whatever n inside power the argument on no effect has to that power originally with called was done is .
+When necessary , it a function a calling routine in a variable modify to for arrange to possible is .
+The caller the address the variable set be to of -LRB- technically the variable to a pointer -RRB- provide must , and the called function the parameter it through the variable indirectly a pointer and access be to declare must .
+We pointers Chapter 5 in cover will .
+The story arrays for different is .
+When an array of the name an argument as used is , the function to passed the value the array of the beginning of the location or address is - there array elements of no copying is .
+this value subscripting By , the function and alter the array of any argument access can .
+This the next section of the topic is .
