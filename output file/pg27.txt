@@ -1,12 +1,12 @@
-Chapter 1 - A Tutorial Introduction
-automatic henceforth to refer to these local variables. ( Chapter 4 discusses the static storage class, in which 
-local variables do retain their values between calls.) 
-Because automatic variables come and go with function invocation, they do not retain their values from one call to 
-the next, and must be explicitly set upon each entry. If they are not set, they will contain garbage. 
-As an alternative to automatic variables, it is possible to define variables that are external to all functions, that is, 
-variables that can be accessed by name by any function. (This mechanism is rather like Fortran COMMON or Pascal variables declared in the outermost block.) Because external variables are globally accessible, they can be used instead of argument lists to communicate data between functions. Furthermore, because external variables remain in existence permanently, rather than appearing and disappearing as functions are called and exited, they retain their values even after the functions that set them have returned. 
-An external variable must be defined, exactly once, outside of any function; this sets aside storage for it. The 
-variable must also be declared in each function that wants to access it; this states the type of the variable. The 
-declaration may be an explicit extern statement or may be implicit from context. To make the discussion concrete, let us rewrite the longest-line program with line, longest, and max as external variables. This 
-requires changing the calls, declarations, and bodies of all three functions. 
-
+ Chapter 1 - A Tutorial Introduction
+automatic henceforth these local variables to . refer to -LRB- Chapter 4 the static storage class , in which local variables their values calls between retain do discusses . -RRB-
+Because automatic variables and go function invocation with come , they one call from the next to their values retain not do , and explicitly each entry upon set be must .
+If they set not are , they garbage contain will .
+automatic variables to an alternative As , it -LRB- This mechanism is rather like Fortran COMMON or Pascal variables the outermost block in declared . -RRB- variables that all functions to external are , that is , variables that . any function by name by accessed be can define to possible is
+Because external variables globally accessible are , they argument lists instead of functions between data communicate to used be can .
+Furthermore , because external variables existence in permanently , and disappearing as functions and exited called are appearing rather than remain , they the functions that set them returned have after their values even retain .
+An external variable , once exactly , any function of outside defined be must ; this it for storage sets aside .
+The variable also each function in declared be that it access to wants must ; this the variable of the type states .
+The declaration an explicit extern statement be may or context from implicit be may .
+the discussion concrete make , us line , longest , with the longest-line program rewrite let and external variables as max To .
+This the calls , declarations , and all three functions of bodies changing requires .
