@@ -4,11 +4,12 @@ itself on this program of The output is
 = 9 3 0 0 0 0 0 0 0 1 , white space = 123 , other = 345 digits
 The declaration
 int ndigit -LRB- 10 -RRB- ;
-10 of an array be to ndigit declares Array subscripts always C in zero at start , so the elements are integers .
--LRB- 0 -RRB- , ndigit -LRB- 1 -RRB- , ... ndigit , ndigit -LRB- 9 -RRB- . loops for the that and print initialize in reflected is This
-the array .
+10 integers of an array be to ndigit declares .
+Array subscripts always zero C in , so the elements ndigit -LRB- 0 -RRB- , ndigit -LRB- 1 -RRB- , are ... , ndigit -LRB- 9 -RRB- at start .
+This loops for the that and print the array initialize in reflected is .
 A subscript any integer expression , which i like integer variables includes , and integer constants be can .
 the character of the properties on This particular program relies the digits of representation . example , the test For
 if -LRB- c -RRB- ' 0 ' & & c -LRB- ' 9 ' = -RRB- =
-determines whether c in the character a digit is . If it is , that digit of the numeric value is
+determines whether c in the character a digit is .
+If it is , that digit of the numeric value is
 c ' 0 ' -
