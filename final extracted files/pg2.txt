@@ -1,24 +1,28 @@
 Chapter 1 - A Tutorial Introduction
-   }
-Just how to run this program depends on the system you are using. As a specific example, on the UNIX operating 
-system you must create the program in a file whose name ends in ``.c'', such as hello.c, then compile it with 
-the command 
+Just how to run this program depends on the system you are using. 
+As a specific example, on the UNIX operating system you must create the program in a file whose name ends in ".c", such as hello.c, then compile it with the command 
    cc hello.c
-If you haven't botched anything, such as omitting a character or misspelling something, the compilation will 
-proceed silently, and make an executable file called a.out. If you run a.out by typing the command 
+If you haven't botched anything, such as omitting a character or misspelling something, the compilation will proceed silently, and make an executable file called a.out. 
+If you run a.out by typing the command 
    a.out
 it will print 
    hello, world
 On other systems, the rules will be different; check with a local expert. 
-Now, for some explanations about the program itself. A C program, whatever its size, consists of functions and 
-variables. A function contains statements that specify the computing operations to be done, and variables store values used during the computation. C functions are like the subroutines and functions in Fortran or the procedures 
-and functions of Pascal. Our example is a function named main. Normally you are at liberty to give functions whatever names you like, but ``main'' is special - your program begins executing at the beginning of main. This means that every program must have a main somewhere. 
-main will usually call other functions to help perform its job, some that you wrote, and others from libraries that 
-are provided for you. The first line of the program, 
-   #include <stdio.h> tells the compiler to include information about the standard input/output library; the line appears at the beginning 
-of many C source files. The standard library is described in 
-Chapter 7 and Appendix B. 
-One method of communicating data between functions is for the calling function to provide a list of values, called arguments, to the function it calls. The parentheses after the function name surround the argument list. In this 
-example, main is defined to be a function that expects no arguments, which is indicated by the empty list ( ). 
-#include <stdio.h>                 include information about standard library
-main()                                          define a function called main                                             that received no argument values{                                   statements of main are enclosed in braces    printf("hello, world\n");              main calls library function printf
+Now, for some explanations about the program itself. 
+A C program, whatever its size, consists of functions and variables. 
+A function contains statements that specify the computing operations to be done, and variables store values used during the computation. 
+C functions are like the subroutines and functions in Fortran or the procedures and functions of Pascal. 
+Our example is a function named main. 
+Normally you are at liberty to give functions whatever names you like, but ``main'' is special - your program begins executing at the beginning of main. 
+This means that every program must have a main somewhere. 
+main will usually call other functions to help perform its job, some that you wrote, and others from libraries that are provided for you. 
+The first line of the program, 
+   #include <stdio.h> tells the compiler to include information about the standard input/output library; the line appears at the beginning of many C source files. 
+The standard library is described in Chapter 7 and Appendix B. 
+One method of communicating data between functions is for the calling function to provide a list of values, called arguments, to the function it calls. 
+The parentheses after the function name surround the argument list. 
+In this example, main is defined to be a function that expects no arguments, which is indicated by the empty list ( ). 
+#include <stdio.h>           include information about standard library
+main()                       define a function called main that received no argument values
+{                            statements of main are enclosed in braces    
+printf("hello, world\n");    main calls library function printf
