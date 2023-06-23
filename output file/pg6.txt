@@ -1,27 +1,27 @@
 Chapter 1 - A Tutorial Introduction
-which set the variables to their initial values. Individual statements are terminated by semicolons. 
-Each line of the table is computed the same way, so we use a loop that repeats once per output line; this is the 
-purpose of the while loop 
-    while (fahr <= upper) {
-       ...    }
-The while loop operates as follows: The condition in parentheses is tested. If it is true (fahr is less than or equal 
-to upper), the body of the loop (the three statements enclosed in braces) is executed. Then the condition is re-tested, and if true, the body is executed again. When the test becomes false (fahr exceeds upper) the loop ends, 
-and execution continues at the statement that follows the loop. There are no further statements in this program, so it terminates. 
-The body of a while can be one or more statements enclosed in braces, as in the temperature converter, or a 
-single statement without braces, as in 
-   while (i < j)
-       i = 2 * i;
-In either case, we will always indent the statements controlled by the while by one tab stop (which we have 
-shown as four spaces) so you can see at a glance which statements are inside the loop. The indentation emphasizes the logical structure of the program. Although C compilers do not care about how a program looks, proper indentation and spacing are critical in making programs easy for people to read. We recommend writing only one statement per line, and using blanks around operators to clarify grouping. The position of braces is less important, although people hold passionate beliefs. We have chosen one of several popular styles. Pick a style that suits you, then use it consistently. 
-Most of the work gets done in the body of the loop. The Celsius temperature is computed and assigned to the 
-variable celsius by the statement 
-        celsius = 5 * (fahr-32) / 9;
-The reason for multiplying by 5 and dividing by 9 instead of just multiplying by 5/9 is that in C, as in many other 
-languages, integer division truncates: any fractional part is discarded. Since 5 and 9 are integers. 5/9 would be 
-truncated to zero and so all the Celsius temperatures would be reported as zero. 
-This example also shows a bit more of how printf works. printf is a general-purpose output formatting 
-function, which we will describe in detail in 
-Chapter 7. Its first argument is a string of characters to be printed, 
-with each % indicating where one of the other (second, third, ...) arguments is to be substituted, and in what form it 
-is to be printed. For instance, %d specifies an integer argument, so the statement 
-        printf("%d\t%d\n", fahr, celsius);
+which their initial values to the variables set . Individual statements semicolons by terminated are .
+the table of Each line the same way computed is , so we a loop use that once output line per repeats ; this the is
+the while loop of purpose
+while -LRB- fahr -LRB- = upper -RRB- -LCB-
+... -RCB-
+The while loop as : parentheses in The condition tested is . follows If it true -LRB- fahr than less is or equal is operates
+upper -RRB- , the loop -LRB- braces in enclosed the three statements -RRB- of the body Then the condition re-tested is executed . , and if true is , the body executed is . again When the test false becomes -LRB- fahr upper exceeds -RRB- the loop ends , to
+and execution the statement at continues that follows the loop . There this program in no further statements are , so it terminates .
+a while of The body braces in , as the temperature converter in enclosed one or more statements , or a be can
+braces without , as in single statement
+while -LRB- i -LRB- j -RRB-
+i = 2 \* i ;
+either case In , we always indent the statements the while one tab by by -LRB- which we have stop controlled will
+four as spaces -RRB- so you a glance at see can which statements inside the loop . The indentation the logical structure the program of . emphasizes Although C compilers how a program looks about care not do , proper indentation and spacing programs people for easy read to . making in critical are We line per only one statement writing , and operators clarify to around blanks grouping . braces of The position less important is , although people passionate beliefs hold . using recommend We several popular styles of one chosen have . are shown Pick a style that suits you , then it consistently use .
+the work of Most the body the loop . of The Celsius temperature and assigned the to computed is in done gets
+the statement by variable celsius
+= 5 \* celsius -LRB- fahr-32 -RRB- 9 \/ ;
+5 by multiplying and 9 by dividing instead of just 5\/9 by multiplying for The reason C in that , many other in as is
+languages , integer division truncates : any fractional part discarded is . 5 and 9 Since 5\/9 be would integers . are
+zero to truncated and so all the Celsius temperatures zero as reported be would .
+This example also a bit more how printf works . of printf a general-purpose output formatting is shows
+function , which we detail in in describe will
+Chapter 7 . characters printed be to , of a string is Its first argument
+indicating where the other -LRB- second , third , ... -RRB- arguments of one substituted be to is each % with , and in what form it
+instance For , % d specifies printed . be to is an integer argument , so the statement
+printf -LRB- '' % d \ t % d \ n '' , fahr , celsius -RRB- ;
