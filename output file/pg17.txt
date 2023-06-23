@@ -1,27 +1,30 @@
- Chapter 1 - A Tutorial Introduction
-sets all zero to three variables . This a special case , but the fact of a consequence that an assignment is an not is
-expression right to . left from associated It 's as if we written had the value and assignments with
+Chapter 1 - A Tutorial Introduction
+sets zero to all three variables .
+This a special case not is , but the fact of a consequence that an assignment the value and assignments with an expression is left to right from associated .
+It 's as if we written had
 nl = -LRB- = -LRB- = 0 nc -RRB- nw -RRB- ;
 The operator the line so , | | means OR
 if -LRB- c = = ' ' ' ' \ t ' = \ n ' | | c -RRB- = | c = |
-`` if c a blank is or c a newline is or c a tab '' is . -LRB- Recall that the escape \ sequence t a visible representation is says
-the tab character . -RRB- of There a corresponding operator & AND for & is ; its precedence just higher is than & & or | | by connected | | . Expressions left right to evaluated are , and it guaranteed is that evaluation as soon as the truth or falsehood known is . If c a blank is stop will , there no need test whether it a newline or tab , so these is to is
-tests made not are . This here particularly important n't is , but more complicated situations in significant is , as we soon see will .
-The example also an else , which an alternative action specifies if an if statement of the condition part is shows
-false . The general form is
+`` if c a blank or c is a newline is or c a tab '' is . -LRB- Recall that the escape sequence \ t the tab character of a visible representation is . -RRB- says
+There a corresponding operator & AND for & is ; its precedence | | than just higher is .
+& & or | | by connected Expressions left right to evaluated are , and it guaranteed is that evaluation as the truth or falsehood known is soon as stop will .
+If c a blank is , there no need test whether it a newline or tab is to is , so these tests made not are .
+This here particularly important n't is , but is more complicated situations , as we soon see will in significant .
+The example also an else shows , which an alternative action specifies if an if statement of the condition part false is .
+The general form is
 if -LRB- expression -RRB-
 statement
 1
 else statement
 2
-One and only one the two statements of an if-else with associated performed . If the expression true is , statement is
-1 executed is ; if not , statement2 executed is . Each statement a single statement or braces in several be can .
+One and only one the two statements of an if-else with associated performed is .
+If the expression true is , statement1 executed is ; if not , statement2 executed is .
+Each statement a single statement or braces in several be can .
 the word count program In , the else after the one an if is that braces in two statements controls .
-Exercise 1-11 . How would you the word count program test ? What input of kinds most likely bugs uncover to are
-if there any are ?
+Exercise 1-11 . How would you the word program count ? test What kinds input of most likely bugs uncover if there any are to are ?
 Exercise 1-12 . Write a program that line per its input one word prints .
 1.6 Arrays
-Let a program each digit , white space characters -LRB- blank , tab of , of occurrences of the number count to write is
-newline -RRB- , and all other characters of . This artificial is , but it us one program in C of several aspects illustrate to permits .
-There input of twelve categories are , so it an array each of occurrences of the number hold to use to convenient is
-digit , rather than ten individual variables . Here the program of one version is :
+Let a program each digit , white space characters -LRB- blank , tab , newline -RRB- of , of occurrences of the number count to write and all other characters of is .
+This artificial is , but it us one program in C of several aspects illustrate to permits .
+There input of twelve categories are , so it an array each digit of occurrences , rather than ten individual variables of the number hold to use to convenient is .
+Here is the program of one version :
