@@ -11,7 +11,6 @@ The choice between while and for is arbitrary, based on which seems clearer.
 The for is usually appropriate for loops in which the initialization and increment are single statements and logically related, since it is more compact than while and it keeps the loop control statements together in one place. 
 Exercise 1-5. Modify the temperature conversion program to print the table in reverse order, that is, from 300 
 degrees to 0. 
-
 1.4 Symbolic Constants
 A final observation before we leave temperature conversion forever. 
 It's bad practice to bury ``magic numbers'' like 300 and 20 in a program; they convey little information to someone who might have to read the program later, and they are hard to change in a systematic way. 
