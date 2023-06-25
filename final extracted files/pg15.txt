@@ -1,8 +1,6 @@
 Chapter 1 - A Tutorial Introduction
 programs do reasonable things with boundary conditions. 
-
 1.5.3 Line Counting
-
 The next program counts input lines. 
 As we mentioned above, the standard library ensures that an input text stream appears as a sequence of lines, each terminated by a newline.
 Hence, counting lines is just counting newlines: 
