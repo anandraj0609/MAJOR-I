@@ -18,5 +18,4 @@ to print the first number of each line in a field three digits wide, and the sec
     20      -6    40       4    60      15    80      26   100      37   ...
 The more serious problem is that because we have used integer arithmetic, the Celsius temperatures are not very accurate; for instance, 0 oF is actually about -17.8oC, not -17. 
 To get more accurate answers, we should use floating-point arithmetic instead of integer. 
-This requires some changes in the program.
 Here is the second version: 
