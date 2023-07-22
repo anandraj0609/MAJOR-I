@@ -1,3 +1,3 @@
-# MAJOR-I
+# MAJOR-I / COE
 
 
